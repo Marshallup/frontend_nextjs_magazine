@@ -3,6 +3,7 @@ import { Container } from '@mui/material';
 import { MainLayoutWrapper, MainBody } from "./styles";
 import MainFooter from "components/MainFooter";
 import MainHeader from "components/MainHeader";
+import DynamicBreadcrumbs from "components/DynamicBreadcrumbs";
 
 const MainLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
     return (
@@ -10,6 +11,7 @@ const MainLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
             <MainHeader />
             <MainBody>
                 <Container>
+                    <DynamicBreadcrumbs />
                     { children }
                 </Container>
             </MainBody>

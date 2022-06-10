@@ -16,4 +16,6 @@ export const HeaderSubBarContainer = styled(Container)`
 export const HeaderSearchInput = styled(SearchInput)`
     padding: 0 10px;
     flex-grow: 1;
+    max-width: 600px;
+    margin-right: auto;
 `;

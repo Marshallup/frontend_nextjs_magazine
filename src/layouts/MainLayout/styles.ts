@@ -8,4 +8,5 @@ export const MainLayoutWrapper = styled.div`
 `;
 export const MainBody = styled.main`
     flex-grow: 1;
+    padding: 20px 0;
 `;

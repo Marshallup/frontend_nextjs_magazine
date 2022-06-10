@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { AccountBox, ShoppingCart, Favorite, Login } from '@mui/icons-material';
 import { UserButton } from './styles';
+import { Badge } from '@mui/material';
 
 const UserBar: FC = () => {
     return (
@@ -9,10 +10,14 @@ const UserBar: FC = () => {
                 <AccountBox />
             </UserButton>
             <UserButton>
-                <ShoppingCart />
+                <Badge badgeContent={3} color={'error'}>
+                    <ShoppingCart />
+                </Badge>
             </UserButton>
             <UserButton>
-                <Favorite />
+                <Badge badgeContent={1} color={'error'}>
+                    <Favorite />
+                </Badge>
             </UserButton>
         </div>
     )
