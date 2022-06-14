@@ -19,7 +19,10 @@ const Home: NextPage = () => {
         Главная
       </Typography>
 
-      <Grid container>
+      <Grid
+        container
+        flexWrap={'nowrap'}
+      >
 
         <FilterGrid item>
           <FilterPanel />

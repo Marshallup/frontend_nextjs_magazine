@@ -122,7 +122,7 @@ const GoodsList: FC = () => {
                     <GoodsItem />
                 </Grid>
                 <Grid xs={activeType === 'grid' ? 4 : 6} item>
-                    <GoodsItem />
+                    <GoodsItem isInFavorites={true} />
                 </Grid>
                 <Grid xs={activeType === 'grid' ? 4 : 6} item>
                     <GoodsItem />
